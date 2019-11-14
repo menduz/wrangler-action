@@ -7,11 +7,8 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
 inputs:
-  apiKey:
-    description: "Your Cloudflare API Key"
-    required: true
-  email:
-    description: "Your Cloudflare Email"
+  apiToken:
+    description: "Your Cloudflare API Token"
     required: true
   environment:
     description: "The environment you'd like to publish your Workers project to - must be defined in wrangler.toml"
