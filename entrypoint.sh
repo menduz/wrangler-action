@@ -22,11 +22,9 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh | bash
 mkdir -p "$HOME/.wrangler"
 chmod -R 770 "$HOME/.wrangler"
 
-sanitize "${INPUT_EMAIL}" "email"
-sanitize "${INPUT_APIKEY}" "apiKey"
+sanitize "${INPUT_APITOKEN}" "apiKey"
 
-export CF_EMAIL="$INPUT_EMAIL"
-export CF_API_KEY="$INPUT_APIKEY"
+export CF_API_TOKEN="$INPUT_APITOKEN"
 
 npm i @cloudflare/wrangler@beta -g
 
