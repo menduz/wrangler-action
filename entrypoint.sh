@@ -28,7 +28,7 @@ sanitize "${INPUT_APIKEY}" "apiKey"
 export CF_EMAIL="$INPUT_EMAIL"
 export CF_API_KEY="$INPUT_APIKEY"
 
-npm i @cloudflare/wrangler -g
+npm i @cloudflare/wrangler@beta -g
 
 if [ -z "$INPUT_ENVIRONMENT" ]
 then
